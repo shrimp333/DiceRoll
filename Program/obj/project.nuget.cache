@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VIYuqhBOMbMiGop7SfDD3j8IlK1E1OAwblZACqlXG7jy9ndnSlsfbBXi4Z46VN68RiV4XawWN8DRShWzwthX1w==",
+  "dgSpecHash": "/zZrccrvZrXLmJFfUVS6NwlZI14LLS6nkBEUJLQ08BbOkNJHXHFVVAxb4PSFaIHP7rZyJnk4EM9W6J3ckIDCvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\assignment3.csproj",
+  "projectFilePath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\assignment3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luke1\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],

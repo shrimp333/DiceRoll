@@ -24,7 +24,12 @@ namespace DiceRole
             Dice.Add(die);
         }
         public double GetAverage() {
-            return results.Average();
+            if (results.Count == 0) {
+                return 0;
+            }
+            int total = GetTotal();
+            double average = total / (double)results.Count();
+            return average;
         }
 
         public int GetTotal() {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\assignment3.csproj": {}
+    "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\assignment3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\assignment3.csproj": {
+    "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\assignment3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\assignment3.csproj",
+        "projectUniqueName": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\assignment3.csproj",
         "projectName": "assignment3",
-        "projectPath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\assignment3.csproj",
+        "projectPath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\assignment3.csproj",
         "packagesPath": "C:\\Users\\luke1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\assignment2\\obj\\",
+        "outputPath": "C:\\Users\\luke1\\OneDrive - Swinburne University\\Programming\\DiceRoll\\Program\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luke1\\AppData\\Roaming\\NuGet\\NuGet.Config",

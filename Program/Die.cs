@@ -5,6 +5,10 @@ namespace DiceRole
     public class Die {
         public int sides { get; set; }
 
+        public Die()
+        {
+            this.sides = 6;
+        }
         public Die(int sides)
         {
             this.sides = sides;
