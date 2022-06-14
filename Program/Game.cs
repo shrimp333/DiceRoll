@@ -9,9 +9,10 @@ namespace DiceRole
         {
             Dice = new List<Die>();
         }
-
+        //Creates a list of dice
         public abstract int RollAllDice();
 
         public abstract void AddDie(int sides);
+        //Abstract methods
     }
 }

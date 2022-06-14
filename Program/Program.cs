@@ -8,6 +8,7 @@ namespace DiceRole
     class Program
     {
         static ClGame DiceRoller = new ClGame();
+        //Create the dice roller object
         static void Main()
         {
             string filePath = "./rolls.txt";
@@ -19,6 +20,7 @@ namespace DiceRole
                     DiceRoller.results.Add(int.Parse(s));
                 }
             }
+            //if the file exists, read the contents and add them to the results list
             while (true)
             {
                 int inputNum;
@@ -56,6 +58,7 @@ namespace DiceRole
                         Console.WriteLine("Hit enter to continue");
                         Console.ReadLine();
                         break;
+                        //create a dice with the number of sides entered
                     case 2:
                         while (true)
                         {
@@ -65,7 +68,9 @@ namespace DiceRole
                             if (Int32.TryParse(input, out int sides) && inputNum > 0)
                             {
                                 Die dice = new Die(sides);
-                                Console.WriteLine($"Rolling a {sides} sided dice result was: {dice.roll()}");
+                                int roll = dice.roll();
+                                Console.WriteLine($"Rolling a {sides} sided dice result was: {roll}");
+                                DiceRoller.results.Add(roll);
                                 Console.WriteLine("Hit enter to continue");
                                 Console.ReadLine();
                                 break;
@@ -76,12 +81,14 @@ namespace DiceRole
                             }
                         }
                         break;
+                        //roll a single die and add the result to the results list
                     case 3:
                         Console.Clear();
                         listAllRolls();
                         Console.WriteLine("Hit enter to continue");
                         Console.ReadLine();
                         break;
+                        //lists every roll ever done to the console
                     case 4:
                         Console.Clear();
                         using (StreamWriter writer = new StreamWriter("./rolls.txt", false))
@@ -89,6 +96,7 @@ namespace DiceRole
                             writer.Write("");
                         }
                         break;
+                        //clears the file
                     case 5:
                         Console.Clear();
                         if (DiceRoller.Dice == null)
@@ -103,12 +111,14 @@ namespace DiceRole
                         Console.WriteLine("Hit enter to continue");
                         Console.ReadLine();
                         break;
+                        //Rolls every die created and adds the result to the results list
                     case 6:
                         Console.Clear();
                         Console.WriteLine($"Average:  {DiceRoller.GetAverage()}\nTotal: {DiceRoller.GetTotal()}");
                         Console.WriteLine("Hit enter to continue");
                         Console.ReadLine();
                         break;
+                        //calls GetAverage and GetTotal and prints the results to the console
                     case 7:
                         using (StreamWriter writer = new StreamWriter("./rolls.txt", false))
                         {
@@ -121,9 +131,11 @@ namespace DiceRole
                         Console.WriteLine("Hit enter to continue");
                         Console.ReadLine();
                         break;
+                        //saves the results to a file
                     case 8:
                         Environment.Exit(0);
                         break;
+                        //exits the program
                 }
             }
         }
